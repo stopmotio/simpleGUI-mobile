@@ -1,0 +1,74 @@
+.main {
+  background-color:white;
+  display:block;
+  width:100vw;
+  height:100vh;
+  max-width:480px;
+  max-height:640px;
+  margin-left:auto;
+  margin-right:auto;
+  overflow:hidden;
+  border:10px solid black;
+}
+
+.flexcontainer {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+/*border:5px solid green; /* This was used to show the flexbox*/
+  height:100vh;
+}
+
+body {
+  margin:0;
+  padding:0;
+  background-image: url('backgrounds/default_exterior.png');
+  background-position:center;
+}
+
+.lownav {
+  width:100%;
+  height:10%; /*Has to be described in terms of % to use default position while remaining low*/
+  background-color:black;
+  margin:0;
+  padding:0;
+  border:0;
+}
+
+iframe {
+  height:90%;
+  width:100%;
+  margin:0;
+  padding:0;
+  border:0;
+}
+
+button {
+  border:0;
+  background:0;
+  max-height:100%;
+  transition-duration:0.1s;
+  width:50px;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+img {
+  height:50px;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+button:active {
+  /*Do neat effect of some kind*/
+  width:100%;
+  background-color:white;
+}
+
+.extraoptions {
+  position:fixed;
+  bottom:0;
+  right:0;
+}

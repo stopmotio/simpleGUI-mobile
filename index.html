@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>simpleGUI Mobile</title>
+<!--
+                              PLEASE NOTE
+===============================================================================
+Everything on the root directory is pertaining to the lander page, which is in charge of rendering the frame on desktops and the home button. The "OS" mostly resides in the OS/ directory.
+
+Thank you for your time!
+-->
+<link rel="stylesheet" href="css.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<div class="flexcontainer">
+  <!-- We use this flexbox to center the thing. Vertically.-->
+  <!-- The flexbox takes up the entire screen so we don't put anything in the body or else it'll scroll-->
+<div class="main">
+  <iframe src="OS/menu.html" title="Sorry, screen readers can't open iframes, rendering this system unusable for you. I apologize." id="iframe"><p>Oops, your browser doesn't support HTML5 correctly.</p></iframe>
+  <!--BELOW: navbar-->
+  <div class="lownav">
+    <button onclick="home();">
+      <img src="icons/home.png" alt="HOME">
+    </button>
+  </div>
+</div>
+
+</div>
+
+<div class="extraoptions">
+  <!--Place extra options here-->
+  <button onclick="devAskToLaunch();"><img src="icons/dev.png" alt="DEVELOPER OPTIONS"></button>
+</div>
+
+<!--So the DOM is ready and it can assign variables, it must be at the very bottom.-->
+<script src="scripts.js"></script>
+</body>
+</html>
